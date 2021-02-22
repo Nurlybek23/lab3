@@ -22,5 +22,10 @@ Route::get('/user', function () {
 });
 
 Route::get('/user2', function () {
-    return 'welcome';
+    return view('n1');
+});
+
+
+Route::get('/user3', function () {
+    return view('index1');
 });
