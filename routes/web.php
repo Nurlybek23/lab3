@@ -21,17 +21,17 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
-    return \File::get(public_path(), '/index.php');
+    // return redirect('/index.php');
 });
 
-Route::get('post/add', function(){
+Route::get('post/create', function(){
     DB::table('posts')->insert([
         'title' => 'lab4',
         'body' => 'finish'
     ]);
 });
 
-Route::get('post', function(){
-    $client = Client::find(1);
-    return $client;
+Route::get('/post', function(){
+    $post = Post::find(1);
+    return $post;
 });
