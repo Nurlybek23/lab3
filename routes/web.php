@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
-    return \File::get(public_path(), '/index.html');
+    return \File::get(public_path(), '/index.php');
 });
