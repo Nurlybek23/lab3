@@ -18,14 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
-    return view('profile');
-});
-
-Route::get('/user2', function () {
-    return view('n1');
-});
-
-
-Route::get('/user3', function () {
-    return view('index1');
+    return \File::get(public_path(), '/index.html');
 });
