@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +22,16 @@ Route::get('/', function () {
 
 Route::get('/user', function () {
     return \File::get(public_path(), '/index.php');
+});
+
+Route::get('post/add', function(){
+    DB::table('posts')->insert([
+        'title' => 'lab4',
+        'body' => 'finish'
+    ]);
+});
+
+Route::get('post', function(){
+    $client = Client::find(1);
+    return $client;
 });
