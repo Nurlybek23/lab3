@@ -1,0 +1,74 @@
+.body{
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 10px 200px;
+    border-bottom: 3px solid black;
+    min-width: auto;
+}
+
+.block{
+    background-image: url(https://img.freepik.com/free-photo/beautiful-landscape-of-a-green-forest_23-2148215269.jpg?size=626&ext=jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 45px;
+    text-align: center;
+}
+.block h1{
+    margin: auto;
+    font-size: 50px;
+    letter-spacing: 7px;
+    word-spacing: 9px;
+    padding: 20px;
+    
+}
+
+.block p{
+    margin: 0 auto;
+    width: 340px;
+    font-size: 15px;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.btn{
+    margin-top: 30px;
+     width: 100px;
+     height: 40px;
+     border: none;
+}
+
+.solution{
+    padding: 20px;
+    text-align: center;
+}
+
+.h1{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.img{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    text-align: center;
+
+}
+.img h5{
+    text-transform: uppercase;
+}
+
+
+.card p{
+    font-size: 12px;
+    
+}
+
+

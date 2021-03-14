@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
 
+use App\Http\Controllers\BlogController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
-    // return redirect('/index.php');
+     return redirect('/main.php');
 });
 
 Route::get('post/create', function(){
@@ -35,3 +37,5 @@ Route::get('/post', function(){
     $post = Post::find(1);
     return $post;
 });
+
+Route::get('blog/index',[BlogController::class, 'index']);

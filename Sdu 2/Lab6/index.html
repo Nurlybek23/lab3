@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body onload = "load()">
+    <script src="main.js"></script>
+    <header>
+        <div id = "home" onclick="window.location.reload()" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Home</div>
+        <div id="assort" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Assortiment</div>
+        <div onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Dostavka</div>
+        <div id="contact" onclick="click()" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Contact</div>
+        <div id = "car_show" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Car show</div>
+    </header>
+
+
+    <div class="content">
+        <img id="img" src="https://static.wixstatic.com/media/11062b_40a304aeb9034bc187226c259aaa4ca3f000.jpg/v1/fill/w_1024,h_952,al_c,q_85,usm_0.33_1.00_0.00/11062b_40a304aeb9034bc187226c259aaa4ca3f000.webp" width="100">
+    </div>
+
+    <img id="models" src="4.png">
+    <img id="models2" src = "unnamed.png">
+    <div class = "lorem">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim veniam, quis nostrud <br> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <div class="registration">
+        <div class="reg-content">
+            <img src="https://www.retroclassiccar.com/wp-content/uploads/2019/07/Retro-car-logo.png" width="15%"><br><br><br>
+            <input id="fullname" type="text" name="fullname" placeholder="Fullname"><br><br>    
+            <input id="email" type="text" name="email" placeholder="Email Addres"><br><br>
+            <input id="num" type="text" name="num" placeholder="Phone number"><br> <br>    
+            <button id="submit">Submit</button>
+          </div>
+  </div>
+
+</body>
+</html>

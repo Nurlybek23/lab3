@@ -1,0 +1,18 @@
+ A)
+StuId -> (lastName, homeAdd, dormRoom, status, roommateName, mealPlan)
+dormRoom -> (dormAdd, dormCharge)
+homeAdd -> homePhone
+mealPlan -> mealPlanCharge
+B)
+Candidate keys: StuId, dormAdd, homeAdd
+Primary key: Stuid
+C)
+Student_Info(FirstName,LastName,status,roommates,homeAddress,phoneNumber,studentID)
+Dorm_Info(dormAddress,phone,director)
+Home_Info(parents,homeAddress,phoneNumbers)
+D)
+All of these 4 tables are in BCNF. The reasons for that: 
+stuId is a superkey in STUDENT.
+dormRoom is a superkey in DORM. 
+homeAdd is a superkey in HOME.
+mealPlan is a superkey in MEAL.
